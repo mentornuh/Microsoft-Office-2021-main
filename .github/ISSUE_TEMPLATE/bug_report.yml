@@ -1,0 +1,36 @@
+name: Installation/Activation Error
+description: Issue with installing or activating MS Office
+labels: ["bug"]
+
+body:
+  - type: textarea
+    attributes:
+      label: Describe the problem
+      description: A clear and concise description of what the problem is.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: Screenshots help us understand the problem.
+  - type: dropdown
+    attributes:
+      label: Windows version
+      description: |
+        What version of windows are you trying to install/activate the product on? 
+        *You can find this in `About your PC` in settings under `Windows specifications`*
+      options:
+        - Windows 11 (22H2)
+        - Windows 11 (21H2)
+        - Windows 10 (22H2)
+        - Windows 10 (21H2)
+        - Windows 10 (other/earlier)
+        - Windows 11 (23H2)
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+    validations:
+      required: false

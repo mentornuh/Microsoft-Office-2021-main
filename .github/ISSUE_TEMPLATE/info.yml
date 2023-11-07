@@ -1,0 +1,30 @@
+name: Questions & Clarifications
+description: Non-bug related queries or concerns.
+
+body:
+  - type: textarea
+    attributes:
+      label: Query Description
+      description: Provide clear and detailed information about your query.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: if applicable, add screenshots to help explain your query.
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: Windows version
+      description: |
+        *You can find this in `About your PC` in settings under `Windows specifications`*
+      options:
+        - Windows 11 (22H2)
+        - Windows 11 (21H2)
+        - Windows 10 (22H2)
+        - Windows 10 (21H2)
+        - Windows 10 (other/earlier)
+        - Windows 11 (23H2)
+    validations:
+      required: true
